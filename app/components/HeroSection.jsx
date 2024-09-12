@@ -51,7 +51,7 @@ const HeroSection = () => {
 
     <button 
         className='px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-black via-blue-600 to-black hover:bg-slate-800 border border-white mt-3 transform transition-transform duration-300 hover:scale-105'
-        onClick={() => window.open('https://example.com/mr-praveen-jain', '_blank')}  // Replace with the actual URL for Mr. Praveen Jain
+        onClick={() => window.open('mailto:passco.mail@gmail.com', '_blank')}  // Replace with the actual URL for Mr. Praveen Jain
     >
         Mr. Praveen Jain
     </button>
