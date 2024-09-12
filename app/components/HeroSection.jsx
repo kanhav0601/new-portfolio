@@ -42,13 +42,20 @@ const HeroSection = () => {
                         />
                     </p>
                     <div>
-                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-700 via-purple-700 to-pink-700 text-white transform transition-transform duration-300 hover:scale-105'>
-                            GeM
-                        </button>
-                        <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-black via-blue-600 to-black hover:bg-slate-800 border border-white mt-3 transform transition-transform duration-300 hover:scale-105'>
-                            Mr, Praveen Jain
-                        </button>
-                    </div>
+    <button 
+        className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-700 via-purple-700 to-pink-700 text-white transform transition-transform duration-300 hover:scale-105'
+        onClick={() => window.open('https://gem.gov.in', '_blank')}  // Opens in a new tab
+    >
+        GeM
+    </button>
+
+    <button 
+        className='px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-black via-blue-600 to-black hover:bg-slate-800 border border-white mt-3 transform transition-transform duration-300 hover:scale-105'
+        onClick={() => window.open('https://example.com/mr-praveen-jain', '_blank')}  // Replace with the actual URL for Mr. Praveen Jain
+    >
+        Mr. Praveen Jain
+    </button>
+</div>
                 </motion.div>
 
                 <motion.div
