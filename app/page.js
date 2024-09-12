@@ -49,7 +49,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col bg--black">
+    <main className="flex min-h-screen flex-col bg-black">
       <Nav />
       <div className="container mt-[10px] px-12 py-10 mx-auto">
         <HeroSection />
