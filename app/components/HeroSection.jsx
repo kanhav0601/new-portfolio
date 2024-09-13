@@ -42,20 +42,13 @@ const HeroSection = () => {
                         />
                     </p>
                     <div>
-    <button 
-        className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-700 via-purple-700 to-pink-700 text-white transform transition-transform duration-300 hover:scale-105'
-        onClick={() => window.open('https://gem.gov.in', '_blank')}  // Opens in a new tab
-    >
-        GeM
-    </button>
-
-    <button 
-        className='px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-black via-blue-600 to-black hover:bg-slate-800 border border-white mt-3 transform transition-transform duration-300 hover:scale-105'
-        onClick={() => window.open('mailto:passco.mail@gmail.com', '_blank')}  // Replace with the actual URL for Mr. Praveen Jain
-    >
-        Mr. Praveen Jain
-    </button>
-</div>
+                        <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-700 via-purple-700 to-pink-700 text-white transform transition-transform duration-300 hover:scale-105'>
+                            GeM
+                        </button>
+                        <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-black via-blue-600 to-black hover:bg-slate-800 border border-white mt-3 transform transition-transform duration-300 hover:scale-105'>
+                            Mr, Praveen Jain
+                        </button>
+                    </div>
                 </motion.div>
 
                 <motion.div
@@ -63,13 +56,13 @@ const HeroSection = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
                     className="col-span-4 place-self-center mt-4 lg:mt-0">
-                    <div className='rounded-full bg-gradient-to-br  from-black via-blue-900 to-black w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
+                    <div className='rounded-full bg-gradient-to-br  from-black via-pink-900 to-blue-900 w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] relative'>
                         <Image
                             src="/images/hero.png"
                             alt='avatar image'
                             className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-                            width={400}
-                            height={400}
+                            width={500}
+                            height={500}
                         />
                     </div>
                 </motion.div>
