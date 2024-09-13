@@ -30,7 +30,7 @@ const Nav = () => {
                     <Image
                         src="/images/logo.png" // Path to your image in the public folder
                         alt="Logo"
-                        width={60} // Set the width of your logo image
+                        width={45} // Set the width of your logo image
                         height={60} // Set the height of your logo image
                         className='object-contain'
                     />
