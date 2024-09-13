@@ -24,7 +24,7 @@ const NavLinks = [
 const Nav = () => {
     const [navOpen, setNavOpen] = useState(false);
     return (
-        <nav className="fixed mx-auto border border-transparent top-0 left-0 right-0 z-10 bg-gradient-to-br from-black to-gray-900 bg-opacity-100">
+        <nav className="fixed mx-auto border border-transparent top-0 left-0 right-0 z-10 bg-gradient-to-br from-gray-900 via-transparent to-gray-900 bg-opacity-50">
             <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
                 <Link href="/">
                     <Image
