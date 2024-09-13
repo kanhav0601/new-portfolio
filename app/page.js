@@ -52,6 +52,17 @@ export default function Home() {
     <main className="flex min-h-screen flex-col relative">
       <Nav />
       <div className="container mt-[10px] px-12 py-10 mx-auto">
+        <video
+          autoPlay
+          muted
+          loop
+          id="background-video"
+          className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+        >
+          <source src="/images/night.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
         <HeroSection />
         <AchievementsSection />
         <AboutSection />
