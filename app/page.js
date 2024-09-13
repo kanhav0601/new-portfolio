@@ -49,7 +49,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col relative bg-cover bg-center" style={{ backgroundImage: 'url("/images/bgpassco.jpg")' }}>
+    <main className="flex min-h-screen flex-col relative">
       <Nav />
       <div className="container mt-[10px] px-12 py-10 mx-auto">
         <HeroSection />
