@@ -49,7 +49,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col bg-black">
+    <main className="flex min-h-screen flex-col relative">
       <Nav />
       <div className="container mt-[10px] px-12 py-10 mx-auto">
         <HeroSection />
@@ -58,25 +58,11 @@ export default function Home() {
         <ProjectsSection />
         <EmailSection />
       </div>
-    
       <Footer />
-      
+
       {[...Array(22)].map((_, i) => (
         <div key={i} className="circle"></div>
       ))}
-      <style jsx>{`
-        .circle {
-          height: 14px;
-          width: 14px;
-          border-radius: 50%;
-          position: fixed;
-          top: 0;
-          left: 0;
-          pointer-events: none;
-          z-index: 99999999;
-          background: linear-gradient(135deg, black, blue); /* Black to Blue gradient */
-        }
-      `}</style>
     </main>
   );
 }
