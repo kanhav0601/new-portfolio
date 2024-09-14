@@ -6,49 +6,15 @@ import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
-  const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [state, handleSubmit] = useForm("xqazodqv");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    setEmailSubmitted(false);
-    setIsLoading(true);
-
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
-
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-
-    try {
-      const response = await fetch(endpoint, options);
-      if (!response.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      await response.json();
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-      e.target.reset();
-    } catch (error) {
-      console.error("There was a problem with the fetch operation:", error);
-      setError("Failed to send email. Please try again later.");
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  if (state.succeeded) {
+    return (
+      <section id="contact" className="my-12 py-24 text-center">
+        <p className="text-green-500 text-4xl font-bold animate-pulse drop-shadow-lg">Thanks for reaching out! We will get back to you shortly.</p>
+      </section>
+    );
+  }
 
   return (
     <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
