@@ -26,13 +26,13 @@ const HeroSection = () => {
                         <TypeAnimation
                             sequence={[
                                 // Same substring at the start will only be typed out once, initially
-                                'Simplified Computing',
+                                'Simplified Computing ✨',
                                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                                'Hardware Fixing',
+                                'Hardware Fixing ✨',
                                 1000,
-                                'Targeting Growth',
+                                'Targeting Growth ✨',
                                 1000,
-                                'Make your computing easier',
+                                'Make your computing easier ✨',
                                 1000
                             ]}
                             wrapper="span"
