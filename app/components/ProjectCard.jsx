@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ProjectCard = ({ title, description, imgUrl, previewUrl }) => {
     return (
-        <div className="relative bg-black p-4 rounded-lg shadow-md w-full max-w-sm mx-auto overflow-hidden">
+        <div className="relative bg-blue-500 hover:bg-black p-4 rounded-lg shadow-md w-full max-w-sm mx-auto overflow-hidden transition-colors duration-300">
             <div className="relative">
                 <Image
                     src={imgUrl}
