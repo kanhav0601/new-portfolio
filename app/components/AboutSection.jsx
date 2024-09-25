@@ -3,6 +3,41 @@ import React, { useTransition, useState } from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton';
 
+const TAB_DATA = [
+    {
+        title: "Services",
+        id: "services",
+        content: (
+            <div>
+                <ul className="list-disc pl-2">
+                    <li>IT Maintenance and Support: PASSCO provides maintenance services for computers and peripherals, including hardware and software upgrades and security solutions.</li>
+                    <li>IT Equipment Supply: We supply new computers, printers, photocopiers, scanners, hard drives, and other IT equipment.</li>
+                  </ul>
+            </div>
+        ),
+    },
+    {
+        title: "Clients",
+        id: "clients",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Income Tax Department</li>
+                <li>Indian Navy</li>
+                <li>Central Vigilance Commission</li>
+                <li>And others</li>
+            </ul>
+        ),
+    },
+    {
+        title: "Contacts",
+        id: "contacts",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>passco.mail@gmail.com</li>
+            </ul>
+        ),
+    },
+];
 
 const AboutSection = () => {
     const [tab, setTab] = useState("services");
