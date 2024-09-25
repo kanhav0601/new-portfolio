@@ -12,7 +12,8 @@ const TAB_DATA = [
                 <ul className="list-disc pl-2">
                     <li>IT Maintenance and Support: PASSCO provides maintenance services for computers and peripherals, including hardware and software upgrades and security solutions.</li>
                     <li>IT Equipment Supply: We supply new computers, printers, photocopiers, scanners, hard drives, and other IT equipment.</li>
-                  </ul>
+                    <li>And others</li>
+                </ul>
             </div>
         ),
     },
@@ -23,7 +24,6 @@ const TAB_DATA = [
             <ul className="list-disc pl-2">
                 <li>Income Tax Department</li>
                 <li>Indian Navy</li>
-                <li>Central Vigilance Commission</li>
                 <li>And others</li>
             </ul>
         ),
@@ -33,8 +33,18 @@ const TAB_DATA = [
         id: "contacts",
         content: (
             <ul className="list-disc pl-2">
-                <li>passco.mail@gmail.com</li>
-            </ul>
+    <li>
+        <a href="mailto:passco.mail@gmail.com" className="text-blue-500 hover:underline">
+            passco.mail@gmail.com
+        </a>
+    </li>
+    <li>
+        <a href="mailto:jain.shreyans0601@gmail.com" className="text-blue-500 hover:underline">
+            jain.shreyans0601@gmail.com
+        </a>
+    </li>
+</ul>
+
         ),
     },
 ];
